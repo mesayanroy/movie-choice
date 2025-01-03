@@ -16,7 +16,7 @@
         <div>
             <label for="movie_name">Enter Movie Code:</label><input id="movie_name" type="text"><button id="update_btn">Load Movie</button>
         </div>
-        <iframe id ="movie_iframe" src="https://vidsrc.me/embed/movie?imdb=tt13186482" title="Movie Frame" class="movie-frame" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
+        <iframe id ="movie_iframe" src="https://vidsrc.net/embed/movie?imdb=tt13186482" title="Movie Frame" class="movie-frame" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
         <h2>Product Api reference</h2>
         <main id="container"></main>
         <link rel="stylesheet" href="styles.css">
@@ -35,7 +35,7 @@
                 const movieCode = movieInput.value.trim(); // Get and trim the input value
                 if (movieCode) {
                     // Update the iframe src
-                    iframe.src = `https://vidsrc.me/embed/movie?imdb=${movieCode}`;
+                    iframe.src = `https://vidsrc.net/embed/movie?imdb=${movieCode}`;
                 } else {
                     alert('Please enter a valid movie code.');
                 }
