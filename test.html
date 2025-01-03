@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <body>
+   
         <header>
             <nav>
                 <h1 id="Title">Product Gallery</h1>
@@ -16,13 +15,14 @@
         </header>
         <div>
             <label for="movie_name">Enter Movie Code:</label><input id="movie_name" type="text"><button id="update_btn">Load Movie</button>
-        <iframe src="https://vidsrc.me/embed/movie?imdb=tt13186482" class="movie-frame" frameborder="1" referrerpolicy="origin" allowfullscreen id="movie_iframe" title="Movie Frame"></iframe>
-        <iframe src="https://vidsrc.me/embed/movie?imdb=tt13186482" class="movie-frame" frameborder="1" referrerpolicy="origin" allowfullscreen id="movie_iframe" title="Movie Frame"></iframe>
+        </div>
+        <iframe id ="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt13186482" title="Movie Frame" class="movie-frame" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
         <h2>Product Api reference</h2>
         <main id="container"></main>
-       <!--ript src="index.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <!-- <script src="index.js"></script>
         <script src="darkmode.js"></script>
-        <script src="test.js"></script>-->
+        <script src="test.js"></script> -->
     
         <script>
             // Get references to elements
@@ -35,12 +35,12 @@
                 const movieCode = movieInput.value.trim(); // Get and trim the input value
                 if (movieCode) {
                     // Update the iframe src
-                    iframe.src = `https://vidsrc.me/embed/movie?imdb=${movieCode}`;
+                    iframe.src = `https://vidsrc.xyz/embed/movie?imdb=${movieCode}`;
                 } else {
                     alert('Please enter a valid movie code.');
                 }
             });
         </script>
-    </body>
+    
 </body>
 </html>
